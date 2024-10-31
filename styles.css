@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: white;
+    color: #000;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    color: orangered;
+}
+
+header h1 span {
+    color: #ccc;
+    font-weight: 300;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+aside {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+section {
+    width: 65%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+aside h2, section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+section p, aside p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    font-size: 0.9rem;
+    background-color: #fff;
+}
+
+footer p {
+    color: #666;
+}
+
+/* Image Styling */
+img {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.attractions-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.attractions-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.attractions-list li div {
+    flex-grow: 1;
+}
+
+.attractions-list li a {
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.attractions-list li p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.attractions-list li figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.attractions-list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.attractions-list li figcaption {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+}
+
+@media (max-width: 2160px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside, section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
